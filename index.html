@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4b101d">
+  <title>Für Hayatimin Anlmai ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient-glow"></div>
+  <div class="snow" aria-hidden="true"></div>
+
+  <section class="gate-screen" id="gateScreen">
+    <div class="gate-card">
+      <div class="gate-ornament">♥</div>
+      <div class="gate-kicker">EIN KLEINES GEHEIMNIS</div>
+      <h1>Nur für <em>Hayatimin Anlmai</em></h1>
+      <p>Dieser kleine Weihnachtsort ist nur für dich bestimmt.<br>Weißt du noch unser geheimes Wort?</p>
+      <form id="passwordForm" class="password-form">
+        <input id="passwordInput" type="password" placeholder="Unser geheimes Wort …" autocomplete="off" aria-label="Passwort">
+        <button type="submit">Mein Herz öffnen <span>♥</span></button>
+      </form>
+      <p class="password-error" id="passwordError" aria-live="polite"></p>
+      <div class="gate-foot">Ein Hinweis: Zwei kleine Fellnasen 🐾</div>
+    </div>
+  </section>
+
+  <div id="siteContent" class="site-content is-locked">
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Zur Startseite"><span class="brand-heart">♥</span> Für dich, von mir</a>
+    <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">
+      <span class="music-icon">♫</span><span id="musicLabel">Musik einschalten</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span></span> DEIN KLEINES WEIHNACHTSWUNDER <span></span></div>
+      <h1>Für <em>Hayatimin Anlmai</em></h1>
+      <p class="intro">24 kleine Überraschungen. 24 Gründe zu lächeln.<br>Und jeden Tag eine neue Erinnerung daran, wie besonders du bist.</p>
+      <div class="dedication">In Liebe, <strong>dein Schatz</strong> <span>♥</span></div>
+
+      <div class="meet-note">
+        <span class="meet-label">EIN DATUM, AUF DAS ICH MICH FREUE</span>
+        <strong>28.12.2026</strong>
+        <span>Vielleicht wird unser schönster Moment ja erst noch geschrieben. ♥</span>
+      </div>
+
+      <div class="countdown-wrap">
+        <div class="countdown-label" id="countdownLabel">Bis zum ersten Türchen</div>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">--</strong><span>TAGE</span></div>
+          <i>·</i>
+          <div><strong id="hours">--</strong><span>STUNDEN</span></div>
+          <i>·</i>
+          <div><strong id="minutes">--</strong><span>MINUTEN</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="calendar-section" aria-label="Adventskalender">
+      <div class="section-heading">
+        <div><span class="mini-label">DEZEMBER 2026</span><h2>Deine 24 Türchen</h2></div>
+        <p id="progressText">0 von 24 geöffnet</p>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="calendar-grid" id="calendarGrid"></div>
+      <p class="hint"><span>✦</span> Jeden Tag wird ein neues Türchen freigeschaltet. Vergangene Überraschungen kannst du jederzeit nachholen.</p>
+    </section>
+    <footer>Mit ganz viel Liebe gemacht <span>♥</span> · Weihnachten 2026</footer>
+  </main>
+
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <article class="surprise-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Schließen">×</button>
+      <div class="modal-sparkle">✧</div>
+      <div class="modal-date" id="modalDate">1. DEZEMBER</div>
+      <h2 id="modalTitle">Eine kleine Überraschung</h2>
+      <div class="modal-content" id="modalContent"></div>
+      <div class="modal-footer">Für immer dein Schatz <span>♥</span></div>
+    </article>
+  </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
